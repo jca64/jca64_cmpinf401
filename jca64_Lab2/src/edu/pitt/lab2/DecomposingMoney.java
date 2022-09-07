@@ -1,4 +1,4 @@
-package edu.pitt.assignment1;
+package edu.pitt.lab2;
 import javax.swing.JOptionPane;
 public class DecomposingMoney {
 	
