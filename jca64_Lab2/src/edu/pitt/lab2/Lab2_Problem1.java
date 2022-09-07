@@ -1,7 +1,7 @@
 package edu.pitt.lab2;
 import javax.swing.JOptionPane;
 
-public class PythagoreanTheorem {
+public class Lab2_Problem1 {
 
 	public static void main(String[] args) {
 		String aLength = JOptionPane.showInputDialog("What is the base length?");

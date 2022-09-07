@@ -1,7 +1,7 @@
 package edu.pitt.lab2;
 import javax.swing.JOptionPane;
 
-public class AreaAndPerimeterOfCircle {
+public class Lab2_Problem2 {
 	
 	public static void main(String[] args) {
 
