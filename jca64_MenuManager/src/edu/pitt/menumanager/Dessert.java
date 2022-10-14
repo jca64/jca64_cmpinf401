@@ -11,7 +11,7 @@ public class Dessert {
 	private String name;
 	private String description;
 	private int calories;
-	
+
 	public Dessert(String n, String d, int c) {
 		name = n;
 		description = d;

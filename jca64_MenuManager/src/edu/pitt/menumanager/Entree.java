@@ -7,11 +7,11 @@ package edu.pitt.menumanager;
  */
 
 public class Entree {
-	
+
 	private String name;
 	private String description;
 	private int calories;
-	
+
 	public Entree(String n, String d, int c) {
 		name = n;
 		description = d;

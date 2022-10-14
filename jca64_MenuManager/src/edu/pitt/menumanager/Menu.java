@@ -66,27 +66,27 @@ public class Menu {
 		String siDesc = "N/A";
 		String saDesc = "N/A";
 		String dDesc = "N/A";
-		
+
 		if(this.getEntree() != null) {
 			eDesc = entree.getDescription();
 		}
-		
+
 		if(this.getSide() != null) {
 			siDesc = side.getDescription();
 		}
-		
+
 		if(this.getSalad() != null) {
 			saDesc = salad.getDescription();
 		}
-		
+
 		if(this.getDessert() != null) {
 			dDesc = dessert.getDescription();
 		}
-		
+
 		String description = "Entree: " + eDesc + "\n" +
-							 "Side: " + siDesc +  "\n" +
-							 "Salad: " + saDesc +  "\n" +
-							 "Dessert: " + dDesc;
+				"Side: " + siDesc +  "\n" +
+				"Salad: " + saDesc +  "\n" +
+				"Dessert: " + dDesc;
 		return description;
 	}
 
