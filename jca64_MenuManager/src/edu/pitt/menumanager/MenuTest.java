@@ -26,9 +26,9 @@ public class MenuTest {
 		Menu weekend = new Menu("Weekend Menu", filet, mashedPotatoes, caesarSalad, chocolateChunkPizookie);
 		
 		System.out.println(week.description());
-		System.out.println(week.totalCalories());
+		System.out.println("This menu is " + week.totalCalories() + " calories total.");
 		System.out.println(weekend.description());
-		System.out.println(weekend.totalCalories());
+		System.out.println("This menu is " + weekend.totalCalories() + " calories total.");
 		
 	}
 
