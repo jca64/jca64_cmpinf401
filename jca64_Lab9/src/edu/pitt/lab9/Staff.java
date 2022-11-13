@@ -31,10 +31,4 @@ public class Staff extends Person {
 	public String toString() {
 		return super.toString();
 	}
-	
-	public static void main(String[] args) {
-		Staff s = new Staff("Jeff", "123 Sesame Street", 120000.0);
-		
-		System.out.println(s.getSchool());
-	}
 }
