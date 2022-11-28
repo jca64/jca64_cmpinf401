@@ -15,6 +15,7 @@ public class MenuManager {
 	private ArrayList<Salad> salads = new ArrayList<>();
 	private ArrayList<Dessert> desserts = new ArrayList<>();
 
+	// Takes ArrayList of mixed types and sorts them into ArrayLists based on type
 	public MenuManager(String dishesFile) {
 
 		ArrayList<MenuItem> items = FileManager.readItems(dishesFile);
@@ -36,6 +37,7 @@ public class MenuManager {
 		}
 	}
 
+	// Creates random menu from a menuManagers ArrayLists
 	public Menu randomMenu(String name) {
 
 		Entree randomEntree = entrees.get((int)(Math.random() * (entrees.size())));
@@ -48,6 +50,7 @@ public class MenuManager {
 		return randomMenu;
 	}
 
+	// Creates min calorie menu from a MenuMangers ArrayLists
 	public Menu minCaloriesMenu(String name) {
 
 		Entree minEntree = entrees.get(0);
@@ -77,6 +80,7 @@ public class MenuManager {
 		return min;
 	}
 
+	// Creates max calorie menu from a MenuMangers ArrayLists
 	public Menu maxCaloriesMenu(String name) {
 
 		Entree maxEntree = entrees.get(0);
@@ -137,5 +141,5 @@ public class MenuManager {
 	public void setDesserts(ArrayList<Dessert> desserts) {
 		this.desserts = desserts;
 	}
-
+	
 }
