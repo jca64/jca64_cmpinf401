@@ -1,7 +1,5 @@
 package edu.pitt.lab10;
 
-import java.lang.reflect.Array;
-
 public class Recursion {
 
 	public static int sumOfDigits(int x) {
@@ -10,9 +8,6 @@ public class Recursion {
 		
 		if(x > 0) {
 			sum = (x%10) + sumOfDigits(x/10);
-		}
-		else {
-			sum = 0;
 		}
 		return sum;
 	}
@@ -26,22 +21,13 @@ public class Recursion {
 	}
 	static int counter = 0;
 	
+	// "All truths are easy to understand once they are discovered; the point is to discover them." - Galileo Galilei
 	public static void printCombos(int[] a, String out, int startIndex, int k) {
 		if (k == 0) {
 			System.out.println("{" + out + " }");
 		}
-		for (int i = startIndex; i < a.length; i++) {
+		for (int i=startIndex; i<a.length; i++) {
 			printCombos(a, out + " " + a[i], i + 1, k - 1);
 		}
-	}
-	
-	public static void main(String[] args) {
-		
-		int[] a = {2, 3, 7, 8, 9};
-		
-		//printArrayElements(a, 0);
-		
-		printCombos(a, "", 0, 3);
-		
 	}
 }
